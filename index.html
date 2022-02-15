@@ -29,7 +29,7 @@
             }
             /* Height for devices larger than 576px */
             
-            @media (min-width: 992px) {
+            @media (min-width: 10px) {
                 #intro {
                     margin-top: -58.59px;
                 }
@@ -45,11 +45,12 @@
         </style>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top navbarScroll" style="z-index: 2000;">
+        <nav class="navbar navbar-expand-lg sticky-top navbarScroll" style="z-index: 2000;">
             <!-- Container wrapper -->
             <div class="container">
                 <!-- Navbar brand -->
-                <a class="navbar-brand nav-link" href="#">Cedric Ahenkorah</a>
+                <a class="navbar-brand nav-link fw-bold" href="#">
+                    Cedric Ahenkorah</a>
 
                 <!-- Toggle button -->
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,10 +65,10 @@
                             <a class="nav-link" aria-current="page" href="#intro">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -115,25 +116,88 @@
         </div>
     </header>
 
-    <main>
-        <div class="card mt-5 mb-3 mx-auto" style="max-width: 80vw;">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <img src="/assets/shubham-dhage-t0Bv0OBQuTg-unsplash.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+    <main class="mx-4">
+        <section id="About">
+            <!--About me-->
+            <div class="container-lg mt-5">
+                <div class="text-center">
+                    <h2 class="text-dark"><strong>About me</strong></h2>
                 </div>
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                        </p>
-                        <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
+
+                <div class="card mt-5 mb-3 mx-auto" style="max-width: 80vw;">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="/assets/shubham-dhage-t0Bv0OBQuTg-unsplash.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="container-lg mt-5">
+                <div class="text-center">
+                    <h2 class="text-dark"><strong>Projects</strong></h2>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 mt-5 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill" />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road" />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a short card.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers" />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers" />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- MDB -->
